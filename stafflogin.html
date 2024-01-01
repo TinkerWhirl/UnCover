@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UnCoverTheatre.com</title>
+    <link rel="icon" href="Images/UncoverLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body id="all">
+    <header>
+        <div class="navbar">
+            <a href="forum.html">Forum</a>
+            <a href="about.html">About</a>
+            <div class="homediv">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Events<i class="fa fa-caret-down">
+        </i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="moviestarmurder.html">Movie Star Murder</a>
+                    <a href="stafflogin.html">Staff Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <SCRIPT language=JavaScript>
+
+        <!-- http://www.spacegun.co.uk -->
+        
+        var message = "Nice try";
+        
+        function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+        
+        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+        
+        document.onmousedown = rtclickcheck;
+        
+    </SCRIPT>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <input type="submit" value="Login">
+
+        <div class="backgroundlogin"></div>
+
+        <script>
+            // add event listener to form submit
+         document.querySelector('form').addEventListener('submit', (event) => {
+         event.preventDefault(); // prevent form from submitting
+         
+
+         const username = document.querySelector('#username').value;
+         const password = document.querySelector('#password').value;
+
+         // check if username and password are correct //
+
+         if (username == 'Kamilla' && password =='p1') {
+         alert('Login successful!');
+            // Kamilla //
+         }
+         else if (username == 'Dale' && password =='p2') {
+         alert('login successful!');
+            // Dale//
+         }
+         else if (username == "Naomi" && password =="p3") {
+         alert('login successful!');
+            // Naomi //
+         }
+         else if(username == "Bonnie" && password =="p4") {
+         alert('login successful!');
+            // Bonnie //
+         }
+
+
+        });
+        </script>
+
+      </form>
+
+    <footer>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/uncovertheatre/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@uncovertheatre?lang=en">TikTok</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
